@@ -1,0 +1,91 @@
+$assets-path: "../../";
+$images-path: $assets-path + "img/";
+
+/* ---------------- breakpoints ---------------- */
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+/* ---------------- General Colors ---------------- */
+$color_primary: #9667ea;
+$color_secondary: #673ab7;
+$color_dark: #35495c;
+$box-shadow-color: rgba(54, 57, 73, 0.09);
+$light_grey: #afb6bc;
+
+/* ---------------- Colors of Buttons ---------------- */
+$success-primary: #01e08c;
+$success-secondary: #00c178;
+$success-shadow: rgba(#2aba5f, 0.5);
+
+$info-primary: #396afc;
+$info-secondary: #2948ff;
+$info-shadow: #5382ee;
+
+$danger-primary: #f00000;
+$danger-secondary: #dc281e;
+$danger-shadow: #e56d65;
+
+$warning-primary: #ff9a73;
+$warning-secondary: #ff4701;
+$warning-shadow: rgba($warning-primary, 0.75);
+
+/* ---------------- Typography variables ---------------- */
+$heading-weight: 900;
+$h1-size: 2rem;
+$h2-size: 1.5rem;
+$h3-size: 1.2rem;
+$h4-size: 1rem;
+$h5-size: 0.5rem;
+$h6-size: 0.25rem;
+
+$paragraph-size: 1rem;
+
+/* ---------------- Helper Mixins ---------------- */
+
+@mixin box-shadow-lg($color: $box-shadow-color) {
+    box-shadow: 0 30px 60px 0 $color;
+}
+
+@mixin box-shadow-sm($color: $box-shadow-color) {
+    box-shadow: 0 5px 40px $color;
+}
+
+@mixin header-box-shadow() {
+    box-shadow: 0 15px 20px rgba(2, 9, 86, 0.1);
+}
+
+@mixin comment-box-shadow() {
+    background-color: var(--theme-bg);
+    box-shadow: 0 5px 7px rgba(28, 76, 156, 0.1) !important;
+}
+
+@mixin transition-fast($transition-timing-function: ease-in) {
+    transition: all 0.2s $transition-timing-function;
+}
+
+@mixin transition-slow($transition-timing-function: ease) {
+    transition: all 0.4s $transition-timing-function;
+}
+
+@mixin EN-text($fontFamily: sans-serif) {
+    font-family: $fontFamily;
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+@mixin shadow-colorful() {
+    box-shadow: 0 5px 15px lighten($color_secondary, 35) !important;
+}
+
+@mixin bg-secondary() {
+    background: var(--general-secondary) !important;
+    color: #fff !important;
+}
+
+@mixin bg-colorful() {
+    background: var(--general-primary) !important;
+    background: linear-gradient(to right, var(--general-primary), var(--general-secondary)) !important;
+    color: #fff !important;
+}

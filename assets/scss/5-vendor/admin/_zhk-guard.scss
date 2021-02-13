@@ -1,0 +1,75 @@
+body.settings_page_mihanpress_guard_register {
+    font-family: "mihanpress-font" !important;
+
+    h1 {
+        font-family: "mihanpress-font" !important;
+    }
+
+    .register_version_form,
+    .current_license {
+        background: #fff;
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(#000000, .09);
+
+        input {
+            border: 1px solid #eee;
+            box-shadow: 0 4px 10px #eee;
+        }
+
+        .button {
+            background-color: #2948ff !important;
+            box-shadow: 0 0 15px #7689ff !important;
+            border: none;
+            padding: 6px;
+        }
+
+        .zhk_guard_new_key {
+            background: #ff5150 !important;
+            box-shadow: 0 0 15px lighten(#ff5150, 15) !important;
+            color: #fff !important;
+            border: none !important;
+        }
+
+        .zhk_guard_danger {
+            color: #f44336 !important;
+            background: rgba(#f44336, .18) !important;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .zhk_guard_success {
+            color: #2aba5f !important;
+            background: rgba(#2aba5f, .18) !important;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+.mihanpress-license-admin-notice {
+    font-family: "mihanpress-font";
+    background: #fff;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(#000000, .09);
+    border: none;
+    border-right: 4px solid #f10000;
+
+    .button {
+        background-color: #2948ff !important;
+        box-shadow: 0 0 15px #7689ff !important;
+        border: none;
+    }
+}
+
+.mihanpress-license-single-page-message {
+    font-family: "mihanpress-font";
+    background: #fff;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(#000000, .09);
+}

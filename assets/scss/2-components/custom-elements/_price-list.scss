@@ -1,0 +1,26 @@
+.mihanpress-price-table {
+    overflow: visible;
+    padding: 0 50px 50px 50px;
+
+    .mihanpress-price-table__title {
+        padding: 15px 60px;
+        transform: translateY(-25px);
+    }
+
+    .mihanpress-price-table__features {
+        margin: 30px 0;
+    }
+
+    .mihanpress-price-table__price {
+        margin-bottom: 15px;
+    }
+
+    .mihanpress-price-table__price-number {
+        color: #2948ff;
+        font-size: 1.7rem;
+    }
+
+    .mihanpress-price-table__price-unit {
+        color: #2948ff;
+    }
+}

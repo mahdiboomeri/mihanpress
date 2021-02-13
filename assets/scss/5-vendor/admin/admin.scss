@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "mihanpress-font";
+    src: url("../../webfonts/iransansweb/iransansweb.eot");
+    src: url("../../webfonts/iransansweb/iransansweb.eot?#iefix") format("embedded-opentype"),
+        url("../../webfonts/iransansweb/iransansweb.woff2") format("woff2"),
+        url("../../webfonts/iransansweb/iransansweb.woff") format("woff"),
+        url("../../webfonts/iransansweb/iransansweb.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+body.wp-admin {
+    font-family: "mihanpress-font";
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "mihanpress-font";
+    }
+}
+
+/* -------------- Nav Menu Page -------------- */
+.nav-menus-php {
+
+    .field-megamenu,
+    .field-megamenu-columns {
+        display: none;
+    }
+
+    .menu-item-depth-0 {
+
+        .field-megamenu,
+        .field-megamenu-columns {
+            display: block;
+        }
+    }
+}
+
+/* -------------- Zhaket Guard -------------- */
+@import "zhk-guard";

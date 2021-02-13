@@ -1,0 +1,259 @@
+/* loader-7 */
+.loader-7 .mp-loader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85px;
+    height: 85px;
+    animation: container7 9s infinite linear;
+}
+
+.loader-7 .ball-wrapper {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.loader-7 .ball-wrapper:nth-of-type(1) {
+    top: 0%;
+    left: 0%;
+    transform: translate(0, 0);
+    animation: loader7-1 3s infinite linear;
+}
+
+.loader-7 .ball-wrapper:nth-of-type(2) {
+    top: 0%;
+    right: 0%;
+    transform: translate(0, 0);
+    animation: loader7-2 3s infinite linear;
+}
+
+.loader-7 .ball-wrapper:nth-of-type(3) {
+    bottom: 0%;
+    left: 0%;
+    transform: translate(0, 0);
+    animation: loader7-3 3s infinite linear;
+}
+
+.loader-7 .ball-wrapper:nth-of-type(4) {
+    bottom: 0%;
+    right: 0%;
+    transform: translate(0, 0);
+    animation: loader7-4 3s infinite linear;
+}
+
+.loader-7 .ball {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: lighten($loader_color, 15);
+    transform: translateY(0px) translateX(-50%) translateZ(0);
+    transform-origin: center;
+    z-index: 2;
+}
+
+.loader-7 .ball-wrapper:nth-of-type(1) .ball,
+.loader-7 .ball-wrapper:nth-of-type(3) .ball {
+    background-color: $loader_color;
+}
+
+@keyframes loader7-1 {
+    0% {
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    16.66% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    33.33% {
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    50% {
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+    }
+
+    66.66% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    83.31% {
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes loader7-2 {
+    0% {
+        top: 0%;
+        right: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    16.66% {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    33.33% {
+        top: 0%;
+        right: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    50% {
+        top: 100%;
+        right: 100%;
+        transform: translate(100%, -100%);
+    }
+
+    66.66% {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    83.31% {
+        top: 100%;
+        right: 100%;
+        transform: translate(100%, -100%);
+    }
+
+    100% {
+        top: 0%;
+        right: 0%;
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes loader7-3 {
+    0% {
+        bottom: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    16.66% {
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    33.33% {
+        bottom: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    50% {
+        bottom: 100%;
+        left: 100%;
+        transform: translate(-100%, 100%);
+    }
+
+    66.66% {
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    83.31% {
+        bottom: 100%;
+        left: 100%;
+        transform: translate(-100%, 100%);
+    }
+
+    100% {
+        bottom: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes loader7-4 {
+    0% {
+        bottom: 0%;
+        right: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    16.66% {
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+
+    33.33% {
+        bottom: 0%;
+        right: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    50% {
+        bottom: 100%;
+        right: 100%;
+        transform: translate(100%, 100%);
+    }
+
+    66.66% {
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+
+    83.31% {
+        bottom: 100%;
+        right: 100%;
+        transform: translate(100%, 100%);
+    }
+
+    100% {
+        bottom: 0%;
+        right: 0%;
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes container7 {
+    45% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    95% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}

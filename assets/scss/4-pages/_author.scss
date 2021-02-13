@@ -1,0 +1,19 @@
+.about-author {
+    overflow: visible;
+    padding-top: 75px;
+
+    .about-author__avatar {
+        margin-top: -120px;
+        border-radius: 100px;
+        overflow: hidden;
+    }
+
+    .about-author__content {
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    .about-author__title {
+        color: var(--general-dark-text);
+    }
+}

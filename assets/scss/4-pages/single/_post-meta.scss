@@ -1,0 +1,166 @@
+@keyframes load1 {
+
+    0%,
+    80%,
+    to {
+        box-shadow: 0 0 rgba(0, 0, 0, .2);
+        height: .6em;
+    }
+
+    40% {
+        box-shadow: 0 -.3em rgba(0, 0, 0, .2);
+        height: 1em;
+    }
+}
+
+
+.post-meta {
+    .share-links {
+        span[class^="flaticon"] {
+            &::before {
+                color: #4a4a4a !important;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.post-meta-wrapper {
+    span {
+        a[rel="tag"] {
+            padding: 5px 15px;
+            line-height: 1.5;
+            border-radius: 5px;
+            font-size: .75rem;
+            display: inline-block;
+        }
+    }
+}
+
+.hero-header--content-title {
+    .post-meta-child {
+        color: #fff !important;
+
+        a {
+            color: #fff !important;
+        }
+    }
+}
+
+.post-meta-child {
+    font-size: .85rem;
+    display: flex;
+    align-self: flex-end;
+    color: var(--general-dark-text);
+
+    span[class^="flaticon-"] {
+        margin-top: 1.6px;
+
+        &::before {
+            font-size: .95rem;
+        }
+    }
+
+    a {
+        color: var(--general-dark-text);
+    }
+}
+
+.post-modified-date {
+    border-radius: 3px;
+    padding: 3.2px 11.2px;
+    font-size: .8rem;
+    margin-left: 16px;
+}
+
+.short-link {
+    background: #eee;
+    padding: 10px 20px 8px;
+    border-radius: 40px;
+    font-size: 14px;
+    cursor: pointer;
+
+    .flaticon-copy-content {
+        &::before {
+            font-size: 16px;
+            margin-right: 7px;
+        }
+    }
+}
+
+
+.author-meta {
+    margin-top: 48px;
+    border-radius: 10px;
+    padding: 20px 10px;
+
+    .author-meta--link-badge {
+        a {
+            @include bg-secondary();
+            @include shadow-colorful();
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: .8rem;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    }
+
+    >div {
+        &:last-child {
+            padding: 10px 20px;
+            line-height: 2;
+
+            >div {
+                &:last-child {
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        &:first-child {
+            width: 120px;
+        }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 50px;
+    }
+}
+
+
+// Ajax Like
+.ml-button {
+    padding: .375em .625em;
+}
+
+.ml-icon {
+    margin-right: .3125em;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+}
+
+.ml-count {
+    margin: 0 0 0 16px;
+    font-size: .9rem;
+}
+
+.like-loader {
+    height: 20px;
+    width: 20px;
+    border: 3px solid rgba(119, 119, 119, .2);
+    border-top-color: rgba(17, 17, 17, .8);
+    border-radius: 100%;
+    animation: rotation .6s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}

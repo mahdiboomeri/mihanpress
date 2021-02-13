@@ -1,0 +1,17 @@
+.sticky-sidebar {
+    will-change: min-height;
+}
+
+.sidebar__inner {
+    will-change: unset;
+    transform: none;
+}
+
+@media (min-width: 1200px) {
+    .sidebar__inner {
+        transform: translate(0, 0);
+        /* For browsers don't support translate3d. */
+        transform: translate3d(0, 0, 0);
+        will-change: position, transform;
+    }
+}

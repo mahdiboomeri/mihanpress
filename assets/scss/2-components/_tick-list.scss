@@ -1,0 +1,26 @@
+.tick-list,
+.woocommerce-product-details__short-description {
+    line-height: 1.7;
+
+    li {
+        background: url($images-path + "tick.svg") no-repeat right;
+        padding-right: 35px;
+        background-size: 20px;
+        margin-bottom: 0.75rem;
+
+        &.close-sign {
+            background: url($images-path + "close.svg") no-repeat right;
+        }
+
+        &.custom-icon {
+            padding: 0;
+            background: none;
+
+            .mp-price-table-custom-icon {
+                font-size: 22px;
+                vertical-align: middle;
+                margin: 0 3px 0 9px;
+            }
+        }
+    }
+}

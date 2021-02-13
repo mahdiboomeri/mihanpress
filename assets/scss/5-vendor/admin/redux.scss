@@ -1,0 +1,37 @@
+$blue: #2948ff;
+$green: #00c178;
+$red: #ff5150;
+
+.redux-form-wrapper {
+    background-color: #F6F5FA;
+}
+
+.redux-container {
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 30px #ddd;
+    border-radius: 10px;
+
+    /* -------------- Redux Sidebar -------------- */
+    @import "redux/redux-sidebar";
+
+    /* -------------- Redux Header -------------- */
+    @import "redux/redux-header";
+
+    /* -------------- Redux Main -------------- */
+    @import "redux/redux-main";
+
+    /* -------------- Redux Footer -------------- */
+    #redux-footer {
+        right: auto !important;
+    }
+
+}
+
+body.rtl {
+    .redux-container {
+        .redux-save-warn.notice-yellow {
+            left: 21px;
+            right: 183px;
+        }
+    }
+}

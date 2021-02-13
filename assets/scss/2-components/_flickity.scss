@@ -1,0 +1,80 @@
+.flickity-page-dots {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: static !important;
+    margin-top: 3rem !important;
+}
+
+.dot {
+    transition: .2s all linear;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.dot.is-selected {
+    border-radius: 20px !important;
+    width: 22px !important;
+}
+
+.align-carousel {
+    min-height: 100%;
+}
+
+.flickity-button.next {
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 20px;
+    transform: translateX(0);
+    padding: 2rem;
+    line-height: 0;
+
+    &::before {
+        content: "\f106";
+        font-size: 30px;
+        font-family: "Flaticon";
+        display: inline-block;
+        margin-right: -15px;
+    }
+
+    svg {
+        display: none;
+    }
+}
+
+.flickity-button.previous {
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 20px;
+    right: auto !important;
+    padding: 2rem;
+    line-height: 0;
+    transform: translateY(0);
+
+    &::before {
+        content: "\f105";
+        font-size: 30px;
+        font-family: "Flaticon";
+        display: inline-block;
+        margin-right: -11px;
+    }
+
+    svg {
+        display: none;
+    }
+}
+
+.carousel.unstable-nav {
+    &:hover {
+        .flickity-button.previous {
+            transform: translateX(0);
+        }
+
+        .flickity-button.next {
+            right: 20px;
+            transform: translateX(0);
+        }
+    }
+}

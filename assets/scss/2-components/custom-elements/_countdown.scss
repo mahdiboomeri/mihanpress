@@ -1,0 +1,37 @@
+.mp-countdown {
+    width: 100%;
+
+    .mp-countdown-digits {
+        font-size: 2rem;
+    }
+
+    &.hide-labels {
+        .mp-countdown-label {
+            display: none;
+        }
+    }
+
+    &.hide-days {
+        .mp-countdown-item:first-child {
+            display: none !important;
+        }
+    }
+
+    &.hide-hours {
+        .mp-countdown-item:nth-child(2) {
+            display: none !important;
+        }
+    }
+
+    &.hide-min {
+        .mp-countdown-item:nth-child(3) {
+            display: none !important;
+        }
+    }
+
+    &.hide-sec {
+        .mp-countdown-item:last-child {
+            display: none !important;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@keyframes caret-blink {
+    0%,
+    49% {
+        opacity: 0
+    }
+
+    50%,
+    to {
+        opacity: 1
+    }
+}
+
+.caret {
+    @include bg-secondary();
+    display: inline-block;
+    height: 3rem;
+    width: 5px;
+    vertical-align: middle;
+    animation: 1s caret-blink linear infinite;
+    margin: 0 5px 0 -19px;
+}

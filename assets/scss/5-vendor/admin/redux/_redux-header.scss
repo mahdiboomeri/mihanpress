@@ -1,0 +1,31 @@
+#redux-header {
+    background-color: #15191C !important;
+    border-color: #2543D8 !important;
+
+    .display_header {
+        float: right;
+
+        >span {
+            background: #2F4AFC;
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 4px;
+            margin: 7px;
+        }
+
+        .redux-dev-qtip {
+            right: 20px;
+            left: auto;
+        }
+
+        .redux-dev-mode-notice {
+            background: #2F4AFC;
+            transform: translateY(9px);
+        }
+    }
+
+    .rAds {
+        left: 9px;
+        right: auto;
+    }
+}

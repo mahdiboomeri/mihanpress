@@ -1,0 +1,233 @@
+%normal-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(#1c4c9c, 0.1);
+    border-radius: 5px;
+
+    &:focus {
+        border-color: #2aba5f;
+    }
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+    border: 2px solid #cecece !important;
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 16px;
+    box-shadow: none !important;
+
+    &:focus {
+        border-color: $color_secondary !important;
+        outline: 0;
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        border-radius: 2px;
+    }
+
+    &:before {
+        transform-origin: left top;
+        transform: rotate(55deg);
+        height: 4px;
+        bottom: 9px;
+        left: 4px;
+        width: 8px;
+    }
+
+    &:after {
+        transform-origin: left top;
+        transform: rotate(-52deg);
+        height: 5px;
+        bottom: 1.6px;
+        left: 5.6px;
+        width: 16px;
+    }
+
+    &:checked {
+        background: $color_secondary !important;
+        border-color: $color_secondary !important;
+
+        &:before,
+        &:after {
+            background: #fff;
+            height: 3px;
+        }
+
+        &:before {
+            animation: checkbox-mask-left 0.15s ease-in-out;
+        }
+
+        &:after {
+            animation: checkbox-mask-right 0.15s ease-in-out;
+        }
+    }
+}
+
+@keyframes checkbox-mask-left {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 8px;
+    }
+
+    100% {
+        width: 8px;
+    }
+}
+
+@keyframes checkbox-mask-right {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 16px;
+    }
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+    border: 2px solid #cecece !important;
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 16px;
+    border-radius: 50px;
+    box-shadow: none !important;
+
+    &:before {
+        content: "";
+        position: absolute;
+        border-radius: 50px;
+        bottom: 4px;
+        left: 4.16px;
+        width: 12px;
+        height: 12px;
+        transform: scale(0);
+        transition: 0.2s all linear;
+    }
+
+    &:checked {
+        border-color: $color_secondary !important;
+
+        &:before {
+            transform: scale(1);
+            background: $color_secondary !important;
+        }
+    }
+
+    &:focus {
+        border-color: $color_secondary !important;
+        outline: 0;
+    }
+}
+
+input[type="submit"] {
+    @include transition-slow();
+}
+
+input {
+    @extend %normal-input;
+    max-width: 100%;
+    transition: all 0.15s linear;
+
+    &::placeholder {
+        font-size: 15px;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+textarea {
+    @extend %normal-input;
+    max-width: 100%;
+    transition: all 0.15s linear;
+    padding: 20px;
+
+    &::placeholder {
+        font-size: 15px;
+    }
+}
+
+select {
+    @include transition-fast();
+    @extend %normal-input;
+    padding-right: 30px !important;
+    display: block;
+    color: #969ea5;
+    line-height: 1.3;
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='10' height='5' viewBox='7 10 10 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' opacity='.54' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.7em top 50%, 0 0 !important;
+    background-size: 0.65em auto, 100% !important;
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+// gravity form
+.ginput_container {
+    .instruction {
+        font-size: 0.7rem !important;
+        margin-top: 0.6rem;
+        margin-right: 0.5rem;
+        color: #595959;
+    }
+}
+
+.gfield_list_group {
+    .gfield_list_icons {
+        a {
+            &:first-child {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+    }
+}
+
+.gfield_description {
+    font-size: 0.8rem !important;
+    margin-top: 0 !important;
+    margin-right: 0.5rem;
+    color: #595959;
+}

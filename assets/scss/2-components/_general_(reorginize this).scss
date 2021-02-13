@@ -1,0 +1,113 @@
+.social_button {
+    a {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        padding: 10px 15px 10px 7px;
+        margin-left: 7px;
+    }
+
+    span[class^="flaticon-"] {
+        &:before {
+            margin-left: 8px;
+            vertical-align: middle;
+            font-size: 20px;
+        }
+    }
+}
+
+.contact-section {
+    span {
+        &::before {
+            margin-left: 8px;
+            vertical-align: middle;
+            font-size: 22px;
+        }
+    }
+
+    a {
+        color: var(--general-dark-text);
+    }
+}
+
+.social-media-s {
+    margin: 32px 0;
+
+    span {
+        @include transition-fast();
+        margin-left: 12px;
+
+        &::before {
+            font-size: 1.5rem;
+        }
+    }
+
+    a {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+.mixit-buttons {
+    margin: 2rem;
+
+    button {
+        margin: 0.5rem !important;
+        border-radius: 5px;
+        position: relative;
+        padding: 5px 25px;
+    }
+}
+
+.item-portfolio {
+    flex-basis: 25%;
+    padding: 10px;
+
+    a {
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    figure {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            height: 212px;
+            width: 100%;
+        }
+    }
+}
+
+.item-slider {
+    padding: 10px;
+
+    a {
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    figure {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            height: 300px;
+            width: 100%;
+        }
+    }
+}
+
+.item-portfolio,
+.item-slider {
+    figure {
+        figcaption {
+            background: $color_secondary;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

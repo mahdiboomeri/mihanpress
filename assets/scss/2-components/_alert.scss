@@ -1,0 +1,92 @@
+$alerts: (
+    "success": #2aba5f,
+    "info": #005ef6,
+    "danger": #f44336,
+    "warning": #ff6a00,
+);
+
+@each $name, $color in $alerts {
+    .alert-#{$name} {
+        color: $color !important;
+        background: rgba($color, 0.18) !important;
+
+        a {
+            color: $color !important;
+            border-bottom: 1px solid $color !important;
+        }
+    }
+
+    .alert-shadow-#{$name} {
+        box-shadow: 0 5px 20px rgba($color, 0.18) !important;
+    }
+}
+
+// Comments
+.comment-reply-link {
+    @extend .alert-warning;
+    @extend .alert-shadow-warning;
+}
+
+#cancel-comment-reply-link {
+    @extend .alert-danger;
+    @extend .alert-shadow-danger;
+}
+
+.woocommerce-review__awaiting-approval {
+    @extend .alert-info;
+    @extend .alert-shadow-info;
+}
+
+// Woocommerce alerts
+.woocommerce-message {
+    @extend .alert-success;
+    @extend .alert-shadow-success;
+}
+
+.woocommerce-error {
+    @extend .alert-danger;
+    @extend .alert-shadow-danger;
+}
+
+.woocommerce-info {
+    @extend .alert-info;
+    @extend .alert-shadow-info;
+}
+
+.dokan-info {
+    @extend .alert-info;
+    @extend .alert-shadow-info;
+}
+
+// Category badge
+.category-badge {
+    a {
+        @extend .alert-info;
+    }
+}
+
+// out of stock
+.stock.out-of-stock {
+    @extend .alert-danger;
+}
+
+// WooCommerce mini-cart remove button
+.woocommerce-mini-cart {
+    a.remove.remove_from_cart_button {
+        @extend .alert-danger;
+    }
+}
+
+.woocommerce a.remove {
+    @extend .alert-danger;
+
+    &:hover {
+        @extend .alert-danger;
+    }
+}
+
+// EDD remove product button
+.edd_cart_remove_item_btn {
+    @extend .alert-danger;
+    @extend .alert-shadow-danger;
+}

@@ -1,0 +1,30 @@
+.rtl .media-frame {
+    font-family: "mihanpress-font" !important;
+}
+
+.media-modal.wp-core-ui {
+    button {
+        border-radius: 0;
+        box-shadow: none;
+        color: #000;
+    }
+
+    .media-modal-close {
+        @extend .alert-danger;
+        @extend .alert-shadow-danger;
+        border-radius: 50px;
+        margin: 0.625rem;
+    }
+
+    .button-primary {
+        @extend .btn-info;
+        border: none !important;
+        border-radius: 3px;
+    }
+
+    .media-menu-item {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}

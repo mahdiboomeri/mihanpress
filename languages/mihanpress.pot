@@ -1,0 +1,1005 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mihanpress 1.1.0\n"
+"POT-Creation-Date: 2020-07-09 14:59+0430\n"
+"PO-Revision-Date: 2020-07-09 00:48+0430\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"Language: fa_IR\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;_nx;_n_noop;_nx_noop;"
+"translate_nooped_plural;esc_html__;esc_html_e;esc_html_x;"
+"esc_attr__;esc_attr_e;esc_attr_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: comments.php:42
+msgid "نظر یا سوال شما در این مورد چیست؟"
+msgstr ""
+
+#: comments.php:43
+#, php-format
+msgid "پاسخ دادن به %s"
+msgstr ""
+
+#: comments.php:44
+msgid "انصراف"
+msgstr ""
+
+#: comments.php:45
+msgid "ارسال نظر"
+msgstr ""
+
+#: comments.php:49 woocommerce/single-product-reviews.php:106
+msgid "برای نظر دادن ابتدا باید وارد شوید."
+msgstr ""
+
+#: comments.php:52
+#, php-format
+msgid ""
+"شما با نام کاربری <a href=\"%1$s\">%2$s</a> وارد شده اید . "
+"آیا میخواهید<a href=\"%3$s\" title=\"Log out of this account"
+"\"> خارج </a> شوید ؟"
+msgstr ""
+
+#: comments.php:57
+msgid "توجه داشته باشید که نشانی ایمیل شما منتشر نخواهد شد."
+msgstr ""
+
+#: comments.php:77
+msgid "هیچ دیدگاهی برای این نوشته ثبت نشده است."
+msgstr ""
+
+#: dashboard/class-dashboard.php:68
+msgid "برای دسترسی به پنل میبایست وارد شوید"
+msgstr ""
+
+#: dashboard/class-dashboard.php:89
+msgid "داشبورد کاربری"
+msgstr ""
+
+#: dashboard/templates/dashboard-default.php:18
+#, php-format
+msgid ""
+"سلام %1$s ( %1$s نیستید؟ <a href=\"%2$s\">خارج شوید</a>)"
+msgstr ""
+
+#: dashboard/templates/dashboard-navigation.php:20
+#, php-format
+msgid "%s عزیز خوش آمدید!"
+msgstr ""
+
+#: dashboard/templates/dashboard-navigation.php:50
+msgid "خروج از سیستم"
+msgstr ""
+
+#: dashboard/templates/woocommerce-address.php:20
+#: dashboard/templates/woocommerce-address.php:29
+msgid "Billing address"
+msgstr ""
+
+#: dashboard/templates/woocommerce-address.php:21
+msgid "Shipping address"
+msgstr ""
+
+#: dashboard/templates/woocommerce-address.php:41
+msgid ""
+"The following addresses will be used on the checkout page "
+"by default."
+msgstr ""
+
+#: dashboard/templates/woocommerce-address.php:59
+msgid "Edit"
+msgstr ""
+
+#: dashboard/templates/woocommerce-address.php:59
+msgid "Add"
+msgstr ""
+
+#: dashboard/templates/woocommerce-address.php:63
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: dashboard/templates/woocommerce-downloads.php:30
+msgid "Browse products"
+msgstr ""
+
+#: dashboard/templates/woocommerce-downloads.php:32
+msgid "No downloads available yet."
+msgstr ""
+
+#: functions.php:138 functions.php:139 functions.php:294
+#: functions.php:318
+msgid "فعالسازی لایسنس میهن پرس"
+msgstr ""
+
+#: functions.php:297
+msgid ""
+"شما از قبل لایسنس خود را وارد کرده اید. برای چک دوباره آن "
+"از بخش زیر استفاده کنید."
+msgstr ""
+
+#: functions.php:300
+msgid "لایسنس فعلی شما : "
+msgstr ""
+
+#: functions.php:312
+msgid "بازرسی لایسنس"
+msgstr ""
+
+#: functions.php:313
+msgid "حذف لایسنس فعلی و ثبت لایسنس جدید"
+msgstr ""
+
+#: functions.php:317
+msgid "لایسنس جدید"
+msgstr ""
+
+#: functions.php:320 functions.php:326 functions.php:340
+msgid "لطفا چند لحظه صبر کنید ..."
+msgstr ""
+
+#: functions.php:333
+msgid "ضمن تشکر بابت خرید شما کاربر گرامی"
+msgstr ""
+
+#: functions.php:334
+msgid ""
+"جهت استفاده از تمامی امکانات قالب میهن پرس لازم است لایسنسی "
+"را که در قسمت دانلود های ژاکت دریافت نموده اید را در باکس "
+"زیر وارد کنید."
+msgstr ""
+
+#: functions.php:337
+msgid "کد لایسنس دریافتی"
+msgstr ""
+
+#: functions.php:338
+msgid "فعالسازی "
+msgstr ""
+
+#: functions.php:369 functions.php:401
+msgid "Something goes wrong please try again."
+msgstr ""
+
+#: functions.php:430
+msgid "لطفا لایسنس خود را وارد کنید."
+msgstr ""
+
+#: functions.php:446
+msgid "کد لایسنس معتبر میباشد.."
+msgstr ""
+
+#: functions.php:450 functions.php:512
+msgid "هورا ! لایسنس شما با موفقیت تایید شد."
+msgstr ""
+
+#: functions.php:477
+#, php-format
+msgid "برای فعالسازی %s لطفا لایسنس قالب را وارد کنید."
+msgstr ""
+
+#: functions.php:479
+msgid "رفتن به صفحه لایسنس"
+msgstr ""
+
+#: functions.php:484
+#, php-format
+msgid ""
+"برای لایسنس %s مشکلی پیش آمده است. لطفا کد لایسنس را چک "
+"کنید."
+msgstr ""
+
+#: functions.php:485
+msgid "Check Now"
+msgstr ""
+
+#: functions.php:498
+msgid "لطفا لایسنس خود را وارد کنید.active"
+msgstr ""
+
+#: functions.php:872
+msgid "منوی سربرگ"
+msgstr ""
+
+#: functions.php:873
+msgid "منوی موبایل"
+msgstr ""
+
+#: functions.php:943
+msgid "ساید بار وبلاگ"
+msgstr ""
+
+#: functions.php:955
+msgid "ساید بار ووکامرس"
+msgstr ""
+
+#: functions.php:957
+msgid "سایدبار ووکامرس"
+msgstr ""
+
+#: functions.php:968
+msgid "ساید بار بخش کشویی دسکتاپ"
+msgstr ""
+
+#: functions.php:970
+msgid "بخش کشویی دسکتاپ"
+msgstr ""
+
+#: functions.php:984
+#, php-format
+msgid "فوتر #%s"
+msgstr ""
+
+#: functions.php:986
+msgid ""
+"بخش فوتر یا پاورقی وبسایت (برای مدیریت تعداد ستون ها به "
+"تنظیمات قالب بروید)"
+msgstr ""
+
+#: functions.php:1235
+msgid "یک محصول به سبد خرید شما اضافه شد ."
+msgstr ""
+
+#: functions.php:1236
+msgid "لینک کوتاه مطلب کپی شد."
+msgstr ""
+
+#: functions.php:1238
+msgid "پسندیدن"
+msgstr ""
+
+#: functions.php:1239
+msgid "لغو پسندیدن"
+msgstr ""
+
+#: inc/breadcrumb.php:27
+msgid "صفحه اصلی"
+msgstr ""
+
+#: inc/breadcrumb.php:209 single.php:76
+msgid "صفحه"
+msgstr ""
+
+#: inc/breadcrumb.php:213
+msgid "نتایج جستجو برای "
+msgstr ""
+
+#: inc/comments.php:31
+msgid "دیدگاه شما پس از تایید نمایش داده می شود."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest "
+"version to ensure maximum compatibility with this theme: "
+"%1$s."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:367
+#, php-format
+msgid ""
+"The following required plugin is currently inactive: %1$s."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:373
+#, php-format
+msgid ""
+"The following recommended plugin is currently inactive: "
+"%1$s."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:393
+#: inc/tgmpa/class-tgm-plugin-activation.php:920
+#: inc/tgmpa/class-tgm-plugin-activation.php:2626
+#: inc/tgmpa/class-tgm-plugin-activation.php:3673
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:394
+#: inc/tgmpa/class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:395
+#: inc/tgmpa/class-tgm-plugin-activation.php:3045
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for "
+"this theme. Please update the plugin."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to "
+"install, update or activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:404
+msgid ""
+"Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:607
+msgid ""
+"This plugin needs to be updated to be compatible with your "
+"theme."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1027
+msgid ""
+"The remote plugin package does not contain a folder with "
+"the desired slug and renaming did not work."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1027
+#: inc/tgmpa/class-tgm-plugin-activation.php:1030
+msgid ""
+"Please contact the plugin provider and ask them to package "
+"their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1030
+msgid ""
+"The remote plugin package consists of more than one file, "
+"but the files are not packaged in a folder."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1214
+#: inc/tgmpa/class-tgm-plugin-activation.php:3041
+msgid "and"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2435
+#, php-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "All <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2489
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2493
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2575
+msgid "unknown"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2626
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2701
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2707
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2777
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2850
+msgid ""
+"No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2852
+msgid ""
+"No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3001
+msgid ""
+"No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3027
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid ""
+"An error occurred while installing %1$s: <strong>%2$s</"
+"strong>."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This "
+"process may take a while on some hosts, so please be "
+"patient."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3602
+#: inc/tgmpa/class-tgm-plugin-activation.php:3610
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3602
+#: inc/tgmpa/class-tgm-plugin-activation.php:3610
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take "
+"a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3610
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3613
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:56
+msgid "نصب افزونه های ضروری"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:57
+msgid "نصب افزونه ها"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:58
+#, php-format
+msgid "درحال نصب افزونه: %s"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:59
+#, php-format
+msgid "درحال آپدیت افزونه: %s"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:60
+msgid "در فرایند نصب افزونه مشکلی پیش آمده است."
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:62
+#, php-format
+msgid ""
+"قالب میهن پرس برای اجرای صحیح به این افزونه نیاز دارد: %1$s."
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:67
+#, php-format
+msgid ""
+"قالب میهن پرس استفاده از این افزونه را پیشنهاد می کند: %1$s."
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:72
+#, php-format
+msgid ""
+"این افزونه برای کارکرد بهتر با قالب نیاز به بروزرسانی به "
+"آخرین نسخه دارد: %1$s."
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:77
+#, php-format
+msgid "یک بروز رسانی برای این افزونه در دسترس است: %1$s."
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:82
+#, php-format
+msgid "افزونه مقابل نیاز به فعالسازی دارد: %1$s."
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:87
+#, php-format
+msgid "افزونه پیشنهادی مقابل نیاز به فعالسازی دارد: %1$s."
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:92
+msgid "شروع نصب افزونه"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:97
+msgid "شروع بروزرسانی افزونه"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:102
+msgid "شروع فعالسازی افزونه"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:106
+msgid "افزونه با موفقیت فعال شد."
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:107
+msgid "افزونه مقابل با موفقیت فعال شد:"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:108
+#, php-format
+msgid "همه افزونه ها با موفقیت فعال شدند. %1$s"
+msgstr ""
+
+#: inc/tgmpa/tgm-plugin-activation.php:109
+msgid "پنهان کردن این اطلاعیه"
+msgstr ""
+
+#: inc/walker/init.php:52
+msgid "غیرفعال کردن لینک"
+msgstr ""
+
+#: inc/walker/init.php:59
+msgid "فعال کردن مگامنو"
+msgstr ""
+
+#: inc/walker/init.php:64
+msgid "تعداد ستون های مگامنو (۱ تا ۶)"
+msgstr ""
+
+#: inc/woocommerce.php:326
+msgid "out of 5"
+msgstr ""
+
+#: inc/woocommerce.php:441
+msgid "پاسخ دادن"
+msgstr ""
+
+#: inc/woocommerce.php:463
+msgid "Your review is awaiting approval"
+msgstr ""
+
+#: inc/woocommerce.php:485
+msgid "معرفی محصول"
+msgstr ""
+
+#: inc/woocommerce.php:490
+#: template-parts/woocommerce/single-product-testimonial.php:11
+msgid "نظرات مشتریان"
+msgstr ""
+
+#: inc/woocommerce.php:495
+#: template-parts/woocommerce/single-product-vendor-info.php:9
+msgid "اطلاعات فروشنده"
+msgstr ""
+
+#: inc/woocommerce.php:500
+msgid "بروزرسانی ها"
+msgstr ""
+
+#: inc/woocommerce.php:505
+msgid "ویژگی های محصول"
+msgstr ""
+
+#: inc/woocommerce.php:509
+msgid "سوالات مشتریان"
+msgstr ""
+
+#: single.php:59
+msgid "برچسب ها :"
+msgstr ""
+
+#: single.php:76
+msgid "صفحات نوشته:"
+msgstr ""
+
+#: template-parts/content/archive-block.php:43
+#: template-parts/content/archive-row.php:39
+#: template-parts/single/post-meta/meta.php:18
+#, php-format
+msgid "%s پیش"
+msgstr ""
+
+#: template-parts/content/archive-block.php:50
+#: template-parts/content/archive-row.php:46
+#: template-parts/single/post-meta/meta.php:40
+#, php-format
+msgid "%s نظر"
+msgstr ""
+
+#: template-parts/content/archive-block.php:58
+msgid "بیشتر بخوانید"
+msgstr ""
+
+#: template-parts/content/archive-row.php:52
+msgid "ادامه مطلب"
+msgstr ""
+
+#: template-parts/headers/templates/navbar.php:20
+#: template-parts/headers/templates/sidenav.php:23
+msgid ""
+"هنوز هیچ منویی برای این قسمت تنظیم نشده است. برای ایجاد منو "
+"کلیک کنید."
+msgstr ""
+
+#: template-parts/headers/templates/searchform.php:2
+#: template-parts/searchform.php:2
+msgid "کلمه مورد نظر + اینتر"
+msgstr ""
+
+#: template-parts/single/author-bio.php:11
+msgid "وبسایت"
+msgstr ""
+
+#: template-parts/single/post-meta/actions.php:20
+msgid "اشتراک گذاری در تلگرام"
+msgstr ""
+
+#: template-parts/single/post-meta/actions.php:25
+msgid "اشتراک گذاری در تویتر"
+msgstr ""
+
+#: template-parts/single/post-meta/actions.php:30
+msgid "اشتراک گذاری در واتساپ"
+msgstr ""
+
+#: template-parts/single/post-meta/actions.php:35
+msgid "اشتراک گذاری در لینکداین"
+msgstr ""
+
+#: template-parts/single/post-meta/meta.php:9
+#: template-parts/woocommerce/single-product-extra-meta.php:14
+#, php-format
+msgid "آپدیت شده در %s پیش"
+msgstr ""
+
+#: template-parts/single/related-posts.php:18
+msgid "شاید از این نوشته‌ها هم خوشتان بیاید"
+msgstr ""
+
+#: template-parts/woocommerce/single-product-updates.php:9
+msgid "لیست بروزرسانی ها"
+msgstr ""
+
+#: template-parts/woocommerce/single-product-vendor-info.php:16
+msgid "مشاهده فروشگاه"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:78
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:120
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/content-product.php:93
+msgid "موجود نیست"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:27
+msgid "سوالات کاربران"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:40
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:44
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:52
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:58
+msgid "Email"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:84
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:88
+msgid "Your rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:89
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:90
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:91
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:92
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:93
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:94
+msgid "Very poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:98
+msgid "Your review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:124
+msgid "نظرات قدیمی تر"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:125
+msgid "نظرات جدید تر"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:135
+msgid "There are no reviews yet."
+msgstr ""
+
+#: woocommerce/single-product/meta.php:33
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:33
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:37
+msgid "Category:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:39
+msgid "Tag:"
+msgstr ""
+
+#: woocommerce/single-product/related.php:24
+msgid "Related products"
+msgstr ""
+
+#: woocommerce/single-product/review-meta.php:28
+msgid "verified owner"
+msgstr ""
+
+#: woocommerce/single-product/tabs/additional-information.php:22
+msgid "Additional information"
+msgstr ""

@@ -1,0 +1,169 @@
+html {
+    overflow-x: hidden;
+}
+
+body,
+html {
+    direction: rtl;
+    text-align: right;
+    font-family: "mihanpress-font";
+    scroll-behavior: smooth;
+    background-color: var(--body-background);
+    color: var(--general-dark-text);
+}
+
+/* override bootstrap container width */
+.container {
+    max-width: var(--container-width) !important;
+}
+
+/* remove negative margins from row */
+.row {
+    max-width: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* anchor link */
+a {
+    @include transition-fast();
+    color: var(--general-secondary);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--general-secondary);
+        text-decoration: none;
+    }
+
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+}
+
+/* remove dots from list items. of course we added later in article box */
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+/* set object fit for images to avoid bad ratio */
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* qouts in article box */
+blockquote {
+    padding: 1.85rem 1.25rem;
+    background: #f7f7f7;
+    border-radius: 10px;
+    text-align: center;
+
+    &::before {
+        content: "\f104";
+        font-family: "Flaticon";
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 25px;
+        margin-bottom: 0.63rem;
+        font-size: 1.85rem;
+    }
+}
+
+/* tables */
+table {
+    td,
+    th {
+        border: 1px solid #eee;
+        padding: 0.3rem;
+    }
+
+    th {
+        background-color: #eee;
+    }
+
+    a {
+        color: var(--general-dark-text);
+    }
+}
+
+/* some helper classes */
+.number {
+    @include EN-text("mihanpress-font");
+    display: inline-block;
+}
+
+.en-text {
+    @include EN-text();
+}
+
+.visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.order-last {
+    order: 99;
+}
+
+.box-shadow-sm {
+    @include box-shadow-sm;
+}
+
+.box-shadow-lg {
+    @include box-shadow-lg;
+}
+
+.box {
+    border-radius: 10px;
+    padding: 0.625rem 1.25rem;
+    background: var(--theme-bg);
+    overflow: auto;
+}
+
+.text-dark {
+    color: var(--general-dark-text) !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.text-colorful {
+    color: var(--general-secondary);
+}
+
+.bg-colorful {
+    @include bg-colorful;
+}
+
+/* set size for some icons */
+.flaticon-youtube::before {
+    font-size: 1.87rem !important;
+}
+
+.flaticon-linkedin-1::before {
+    font-size: 1.68rem !important;
+}

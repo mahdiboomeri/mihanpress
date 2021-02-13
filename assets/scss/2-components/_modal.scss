@@ -1,0 +1,65 @@
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0;
+    will-change: top, opacity;
+
+    &:focus {
+        outline: 0
+    }
+}
+
+.modal-content {
+    width: 40%;
+    margin: 35vh auto 35vh;
+
+    .search-form__input {
+        background: transparent;
+        border: 0;
+        border-bottom: 3px solid #ddd;
+        border-radius: 0;
+        line-height: 2;
+        box-shadow: none;
+
+        &:focus {
+            border: 0 !important;
+            border-bottom: 3px solid #ddd !important;
+        }
+
+        &::placeholder {
+            font-size: 1.75rem;
+            color: rgb(190, 190, 190);
+        }
+    }
+}
+
+
+.modal-close {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 23px;
+
+    span {
+        &::before {
+            font-size: 22px;
+            color: #EF5350;
+        }
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    z-index: 999;
+    top: -25%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 125%;
+    width: 100%;
+    background: #fff;
+    display: none;
+    will-change: opacity
+}

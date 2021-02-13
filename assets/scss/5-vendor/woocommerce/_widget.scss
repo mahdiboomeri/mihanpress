@@ -1,0 +1,49 @@
+.woocommerce.widget_shopping_cart {
+    .cart_list {
+        li {
+            padding-right: 0 !important;
+
+            a.remove {
+                position: relative !important;
+            }
+        }
+    }
+}
+
+.widget_shopping_cart_content {
+    >ul {
+        >li {
+            width: 100%;
+        }
+    }
+}
+
+.widget {
+    .woocommerce-mini-cart__empty-massage {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .woocommerce-mini-cart-item.mini_cart_item {
+        a {
+            &:nth-child(2) {
+                font-size: 12px;
+
+                img {
+                    width: 50px !important;
+                }
+            }
+        }
+    }
+
+    .woocommerce-mini-cart__buttons.buttons {
+        text-align: center;
+    }
+
+    .woocommerce-mini-cart__total.total {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+}

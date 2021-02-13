@@ -1,0 +1,230 @@
+.redux-main {
+    width: 79%;
+
+    img {
+        max-width: 96%;
+    }
+}
+
+.redux-section-field {
+    background: #F7F7F7;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border-bottom: 3px solid #eee;
+
+    h3 {
+        border: none;
+        margin: 0;
+        margin-top: 0 !important;
+    }
+}
+
+.colorGradient {
+    margin-right: 3rem;
+}
+
+.wp-picker-container {
+    button {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 135px;
+        min-height: 38px;
+    }
+
+    .wp-color-result-text {
+        height: 100%;
+    }
+}
+
+
+.redux-notice-field.redux-success,
+.saved_notice.admin-notice.notice-green {
+    border: none;
+    color: $green;
+    background: rgba(42, 186, 95, .18);
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: none;
+}
+
+.redux-save-warn.notice-yellow,
+.redux-field-warnings.notice-yellow,
+.saved_notice.admin-notice.notice-yellow {
+    background: #FDDED5;
+    color: #ff6a00;
+}
+
+.redux-field-errors.notice-red {
+    background: rgba(244, 67, 54, .18);
+    color: $red;
+}
+
+.redux-container-slides .redux-slides-add {
+    margin-right: 0;
+}
+
+.button:not(.wp-color-result) {
+    background: $blue;
+    box-shadow: 0 0 15px lighten($blue, 15);
+    color: #fff;
+    border: none;
+    margin-right: .5rem;
+    padding: .1rem 1rem;
+
+    &:hover,
+    &:focus {
+        background: $blue;
+        color: #fff;
+        box-shadow: 0 0 15px lighten($blue, 15);
+    }
+}
+
+#redux-defaults-section-top,
+#redux-defaults-section-bottom {
+    background: $blue !important;
+    box-shadow: 0 0 15px lighten($blue, 15) !important;
+    color: #fff !important;
+}
+
+.upload_button_div .button.remove-image,
+.redux-main .removeCSS,
+#redux-defaults-sticky,
+#redux-defaults-top,
+#redux-defaults-bottom,
+.ui-accordion-content .button.deletion.redux-slides-remove,
+#redux-import-link-button,
+#redux-import-code-button,
+#redux-import {
+    background: $red !important;
+    box-shadow: 0 0 15px lighten($red, 15) !important;
+    color: #fff !important;
+    border: none;
+
+    &:hover,
+    &:focus {
+        background: $red;
+        box-shadow: 0 0 15px lighten($red, 15);
+        color: #fff;
+    }
+}
+
+#redux_save_sticky,
+#redux_top_save,
+#redux_bottom_save,
+.wp-core-ui .button-primary,
+#redux-export-link,
+#redux-export-code-copy,
+#redux-export-code-dl {
+    background: $green !important;
+    box-shadow: 0 0 10px rgba($green, .45) !important;
+    color: #fff !important;
+    border: none;
+}
+
+.redux-container-switch .cb-enable {
+    padding: .2rem 2rem;
+
+    &.selected {
+        background-image: none !important;
+        background-color: $blue !important;
+        border-color: $blue !important;
+        box-shadow: none !important;
+    }
+}
+
+.redux-container-switch .cb-disable {
+    padding: .2rem 2rem;
+
+    &.selected {
+        background-image: none !important;
+        background-color: #6c757d !important;
+        border-color: #6c757d !important;
+        box-shadow: none !important;
+    }
+}
+
+.noUi-handle {
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    top: -7px;
+    box-shadow: none;
+
+    &::before,
+    &::after {
+        display: none;
+    }
+}
+
+.noUi-origin.noUi-connect.noUi-dragable {
+    background: $blue !important;
+    box-shadow: none;
+}
+
+.redux-slider-container {
+    background: #fff;
+    border-radius: 50px;
+    border-color: #eee;
+}
+
+.noUi-origin.noUi-connect.noUi-dragable,
+.redux-slider-container {
+    height: 8px;
+}
+
+.redux-slider-label {
+    transform: translateX(-10px);
+}
+
+#footer_topbar_badge_content-ul {
+    textarea {
+        display: none;
+    }
+}
+
+.quicktags-toolbar .ed_button.button.button-small {
+    background: #eee;
+    color: #828282;
+    box-shadow: none;
+    border: 1px solid #a29e9e;
+}
+
+/* -------------- Regular input and textarea -------------- */
+.regular-text,
+.large-text,
+.upload.large-text,
+.redux-slides-list input,
+.redux-slides-list textarea {
+    border: 1px solid #eee;
+    padding: 12px;
+    box-shadow: 0 4px 10px #eee;
+}
+
+/* -------------- Select2 -------------- */
+.select2-selection {
+    background: #fff;
+    border: 1px solid #ececec;
+    height: 37px;
+    box-shadow: 0 4px 10px #eee;
+
+    .select2-selection__rendered,
+    .select2-selection__arrow {
+        margin-top: 4px;
+    }
+}
+
+/* -------------- Spinner -------------- */
+.redux-container-spinner {
+    .ui-widget {
+        .ui-spinner-button {
+            background: $blue !important;
+
+            .ui-icon {
+                background: $blue !important;
+                border-color: $blue !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+}

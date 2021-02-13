@@ -1,0 +1,27 @@
+p {
+    line-height: 2rem;
+    font-size: $paragraph-size
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-weight: $heading-weight !important
+}
+
+.h1 {
+    font-size: $h1-size !important;
+}
+
+.h2 {
+    font-size: $h2-size !important;
+}
+
+.h3 {
+    font-size: $h3-size !important;
+}
+
+.h4 {
+    font-size: $h4-size !important;
+}

@@ -1,0 +1,31 @@
+.hero-header {
+    min-height: 320px;
+
+    .hero-header--content {
+        display: flex;
+        height: 100%;
+        padding: 55px 0;
+        color: #fff;
+    }
+
+    .hero-header--content-thumbnail {
+        figure {
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*------------------------------------*\
+    	     Skew Hero Header
+\*------------------------------------*/
+@import "skew";
+
+/*------------------------------------*\
+    	     Waves Hero Header
+\*------------------------------------*/
+@import "waves";

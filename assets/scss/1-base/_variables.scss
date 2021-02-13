@@ -1,0 +1,108 @@
+:root {
+    /* width of .container */
+    --container-width: 1200px;
+
+    /* body backgournd */
+    --body-background: #f5f5f7;
+
+    /* General colors */
+    --general-primary: #{$color_primary};
+    --general-secondary: #{$color_secondary};
+    --general-dark: #{$color_dark};
+
+    --general-shadow: #{lighten($color_secondary, 35)};
+    --general-box-shadow: #{$box-shadow-color};
+
+    --general-light-text: #fff;
+    --general-dark-text: #{$color_dark};
+
+    /*
+    colors of .btn prefixed classes
+    usage: /components/buttons/_button.scss
+    these variables may change by theme options
+    */
+
+    // btn-primary
+    --btn-primary-first: #{$color_primary};
+    --btn-primary-second: #{$color_secondary};
+    --btn-primary-text: #fff;
+    --btn-primary-shadow: #{lighten($color_primary, 15)};
+
+    // btn-secondary
+    --btn-secondary-bg: #6c757d;
+    --btn-secondary-text: #fff;
+    --btn-secondary-shadow: rgba(#6c757d, 0.25);
+
+    // btn-success
+    --btn-success-primary: #{$success-primary};
+    --btn-success-secondary: #{$success-secondary};
+    --btn-success-text: #fff;
+    --btn-success-shadow: #{$success-shadow};
+
+    // btn-info
+    --btn-info-primary: #{$info-primary};
+    --btn-info-secondary: #{$info-secondary};
+    --btn-info-text: #fff;
+    --btn-info-shadow: #{$info-shadow};
+
+    // btn-danger
+    --btn-danger-primary: #{$danger-primary};
+    --btn-danger-secondary: #{$danger-secondary};
+    --btn-danger-text: #fff;
+    --btn-danger-shadow: #{$danger-shadow};
+
+    // btn-warning
+    --btn-warning-primary: #{$warning-primary};
+    --btn-warning-secondary: #{$warning-secondary};
+    --btn-warning-text: #fff;
+    --btn-warning-shadow: #{$warning-shadow};
+
+    // btn-light
+    --btn-light-bg: #{lighten($color_secondary, 46)};
+    --btn-light-text: #{$color_secondary};
+
+    // btn-dark
+    --btn-dark-bg: #{lighten($color_dark, 10)};
+    --btn-dark-text: #fff;
+    --btn-dark-shadow: #{lighten($color_dark, 30)};
+
+    // btn-outline-primary
+    --btn-outline-primary: var(--btn-primary-second);
+
+    // btn-outline-success
+    --btn-outline-success: var(--btn-success-secondary);
+
+    // btn-outline-info
+    --btn-outline-info: var(--btn-info-primary);
+
+    // btn-outline-danger
+    --btn-outline-danger: #ff5150;
+
+    /*
+    colors of header navbar (including normal sub menus, mega menus and mobile collapsible)
+    usage: layouts folder
+    these variables may change by theme options
+    */
+
+    // sub-menu
+    --sub-menu-primary: #{darken($color_secondary, 11)};
+    --sub-menu-secondary: #{lighten($color_dark, 20)};
+    --sub-menu-text: #fff;
+    --sub-menu-text-hover: #fff;
+    --sub-menu-shadow: #{lighten($color_dark, 15)};
+
+    // mobile collapsible
+    --mobile-collapsible-bg: $color_secondary;
+    --mobile-collapsible-text: #fff;
+
+    // mega menu
+    --mega-menu-primary: #fff;
+    --mega-menu-secondary: #fff;
+    --mega-menu-text: #{$color_dark};
+    --mega-menu-text-hover: #{$color_dark};
+    --mega-menu-shadow: #{$box-shadow-color};
+
+    /* Current-theme (Light / Dark) */
+    --theme-bg: #fff;
+    --theme-text: var(--general-dark-text);
+}

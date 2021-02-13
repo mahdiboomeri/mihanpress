@@ -1,0 +1,132 @@
+.footer-notice {
+    > section {
+        border-bottom: 1px solid #cfd8dc;
+    }
+}
+
+.footer-badge-img {
+    width: 70px;
+    height: 55px !important;
+    object-fit: contain;
+}
+
+.footer-badge {
+    span {
+        font-size: 0.85rem;
+    }
+}
+
+#footer {
+    margin-top: 45px;
+
+    .col-lg-4 {
+        > span {
+            margin-bottom: 20px;
+        }
+    }
+
+    p,
+    #text {
+        font-size: 0.9rem;
+        line-height: 2;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        line-height: 2.3;
+        padding-right: 10px;
+    }
+
+    > .container {
+        > section {
+            max-width: 100% !important;
+            flex-grow: 1;
+        }
+    }
+
+    .copyright {
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 0.9rem;
+
+        p {
+            font-size: 0.9rem !important;
+            margin: 0 !important;
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                padding-right: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    a {
+        color: var(--general-dark-text);
+
+        &:hover {
+            color: var(--general-dark-text);
+        }
+    }
+
+    > li {
+        margin: 4px;
+        padding: 10px 15px;
+        border-radius: 3px;
+        font-size: 15px;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .sub-menu {
+        display: none;
+    }
+}
+
+.footer-after-menu {
+    border-top: 1px solid #cfd8dc;
+    padding-top: 10px;
+}
+
+#backtotop {
+    padding: 16px;
+    font-size: 1.5rem;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    bottom: 16px;
+    right: 32px;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed !important;
+    z-index: 9999;
+
+    span {
+        margin-top: 7px;
+        margin-left: 2px;
+    }
+}
+
+.backtotop-left {
+    left: 32px !important;
+    right: auto !important;
+}

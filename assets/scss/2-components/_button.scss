@@ -1,0 +1,208 @@
+@mixin btn($important_padding: null) {
+    @include transition-slow();
+
+    @if $important_padding==1 {
+        $important_padding: !important;
+    }
+
+    padding: 12px 32px $important_padding;
+    border-radius: 10rem;
+    border: 0;
+    outline: none;
+
+    &:focus {
+        border: 0;
+    }
+
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+}
+
+.btn {
+    @include btn();
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="button"] {
+    @include btn();
+    @extend .btn-primary;
+}
+
+/* -------------- Buttons -------------- */
+$btns: (
+    "primary": (
+        "gradient": 1,
+        "color-a": var(--btn-primary-first),
+        "color-b": var(--btn-primary-second),
+        "text": var(--btn-primary-text),
+        "shadow": var(--btn-primary-shadow),
+        "important": 0,
+    ),
+    "secondary": (
+        "gradient": 0,
+        "color-a": var(--btn-secondary-bg),
+        "text": var(--btn-secondary-text),
+        "shadow": var(--btn-secondary-shadow),
+        "important": 1,
+    ),
+    "success": (
+        "gradient": 1,
+        "color-a": var(--btn-success-primary),
+        "color-b": var(--btn-success-secondary),
+        "text": var(--btn-success-text),
+        "shadow": var(--btn-success-shadow),
+        "important": 1,
+    ),
+    "info": (
+        "gradient": 1,
+        "color-a": var(--btn-info-primary),
+        "color-b": var(--btn-info-secondary),
+        "text": var(--btn-info-text),
+        "shadow": var(--btn-info-shadow),
+        "important": 1,
+    ),
+    "danger": (
+        "gradient": 1,
+        "color-a": var(--btn-danger-primary),
+        "color-b": var(--btn-danger-secondary),
+        "text": var(--btn-danger-text),
+        "shadow": var(--btn-danger-shadow),
+        "important": 1,
+    ),
+    "warning": (
+        "gradient": 1,
+        "color-a": var(--btn-warning-primary),
+        "color-b": var(--btn-warning-secondary),
+        "text": var(--btn-warning-text),
+        "shadow": var(--btn-warning-shadow),
+        "important": 1,
+    ),
+    "light": (
+        "gradient": 0,
+        "color-a": var(--btn-light-bg),
+        "text": var(--btn-light-text),
+        "shadow": none,
+        "important": 1,
+    ),
+    "dark": (
+        "gradient": 0,
+        "color-a": var(--btn-dark-bg),
+        "text": var(--btn-dark-text),
+        "shadow": var(--btn-dark-shadow),
+        "important": 1,
+    ),
+);
+
+@each $name, $data in $btns {
+    $important: &;
+
+    @if map-get($data, "important") == 1 {
+        $important: !important;
+    }
+
+    .btn-#{$name} {
+        background: map-get($data, "color-a") $important;
+
+        @if map-get($data, "gradient") ==1 {
+            background: linear-gradient(to right, map-get($data, "color-a"), map-get($data, "color-b")) $important;
+        }
+
+        @if map-get($data, "shadow") !=none {
+            box-shadow: 0 5px 20px map-get($data, "shadow") $important;
+        }
+
+        color: map-get($data, "text") $important;
+
+        &:hover,
+        &:focus,
+        &:visited {
+            color: map-get($data, "text") $important;
+        }
+    }
+}
+
+/* -------------- Outline Buttons -------------- */
+$btn-outline: (
+    "primary": var(--btn-outline-primary),
+    "success": var(--btn-outline-success),
+    "info": var(--btn-outline-info),
+    "danger": var(--btn-outline-danger),
+);
+
+@each $name, $color in $btn-outline {
+    .btn-outline-#{$name} {
+        background: transparent !important;
+        color: $color !important;
+        border: 2px solid $color !important;
+        box-shadow: none !important;
+
+        &:hover,
+        &:focus,
+        &:visited {
+            background: $color !important;
+            color: #fff !important;
+            border: 2px solid $color !important;
+        }
+    }
+}
+
+/* -------------- Elementor -------------- */
+$elementor_buttons: (
+    "primary",
+    "secondary",
+    "info",
+    "success",
+    "warning",
+    "danger",
+    "light",
+    "dark",
+    "outline-primary",
+    "outline-success",
+    "outline-info",
+    "outline-danger"
+);
+
+@each $name in $elementor_buttons {
+    .elementor-button-mp-#{$name} .elementor-button-wrapper a {
+        @extend .btn-#{$name};
+    }
+}
+
+/* -------------- WooCommerce -------------- */
+.onsale {
+    @extend .btn-success;
+}
+
+.product-actions {
+    .btn.loading {
+        &::before {
+            @extend .btn-success;
+        }
+    }
+}
+
+.woocommerce .single_add_to_cart_button.button.alt {
+    @extend .btn-success;
+}
+
+.woocommerce-message {
+    .button {
+        @extend .btn-success;
+    }
+}
+
+.woocommerce-Message.woocommerce-Message--info {
+    .button {
+        @extend .btn-info;
+    }
+}
+
+.woocommerce-error {
+    .button {
+        @extend .btn-danger;
+    }
+}

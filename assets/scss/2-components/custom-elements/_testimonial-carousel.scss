@@ -1,0 +1,11 @@
+.testimonial-carousel {
+    p {
+        margin-top: 40px;
+    }
+
+    .flaticon-right-quote-sign {
+        &::before {
+            font-size: 35px;
+        }
+    }
+}

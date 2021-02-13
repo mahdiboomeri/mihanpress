@@ -1,0 +1,19 @@
+.mp-call-to-action {
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(#fd0043, 0.6);
+    transition: all 0.2s ease;
+
+    .btn {
+        line-height: 1.5;
+    }
+
+    > div {
+        flex-grow: 1;
+
+        p {
+            margin: 0;
+        }
+    }
+}

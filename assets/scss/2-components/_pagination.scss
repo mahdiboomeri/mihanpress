@@ -1,0 +1,62 @@
+.paginate-links {
+    width: 100%;
+    
+    .page-numbers,
+    .post-page-numbers {
+        padding: 13px 16px;
+        background: #fff;
+        color: var(--general-dark-text);
+        margin: 5px 3px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(46, 61, 73, 0.15);
+
+        &.current {
+            @extend .btn-dark;
+        }
+    }
+}
+
+.woocommerce-pagination {
+    .page-numbers {
+        li {
+            overflow: visible !important;
+            margin: 0 !important;
+
+            .page-numbers {
+                padding: 13px 16px !important;
+                background: #fff !important;
+                color: var(--general-dark-text);
+                margin: 0 3px;
+                border-radius: 5px;
+                box-shadow: 0 0 20px rgba(46, 61, 73, 0.15);
+                line-height: 1.5 !important;
+
+                &.current {
+                    @extend .btn-dark;
+                }
+            }
+        }
+    }
+}
+
+.dokan-pagination {
+    margin-top: 15px;
+
+    li {
+        a {
+            padding: 13px 16px !important;
+            background: #fff !important;
+            color: var(--general-dark-text);
+            margin: 5px 3px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(46, 61, 73, 0.15);
+            border: 0 !important;
+
+            &.active {
+                a {
+                    @extend .btn-dark;
+                }
+            }
+        }
+    }
+}

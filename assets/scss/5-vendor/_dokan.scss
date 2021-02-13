@@ -1,0 +1,179 @@
+.dokan-dashboard-content {
+    .entry-title {
+        @extend .h3;
+    }
+
+
+}
+
+.rtl {
+    .dokan-dashboard-content {
+        .pull-right {
+            float: left;
+        }
+    }
+}
+
+.dokan-dashboard-wrap {
+    overflow: visible !important;
+
+    .dokan-dash-sidebar {
+        #dokan-navigation {
+            .settings {
+                .fa-angle-right {
+                    display: none;
+                }
+            }
+
+            .back {
+                a {
+                    i {
+                        display: none !important;
+                    }
+                }
+            }
+
+            .active {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.dokan-dashboard-content {
+    overflow: visible !important;
+
+    .dashboard-widget {
+        @include box-shadow-sm($color: $box-shadow-color !important);
+        border: none !important;
+        border-radius: 10px;
+    }
+}
+
+.dokan-orders-area,
+.dokan-settings-area,
+.dashboard-content-area,
+.dokan-product-listing-area,
+.dokan-withdraw-area,
+.dokan-coupon-content,
+.dokan-reports-content,
+.dokan-reviews-content {
+    @include box-shadow-lg();
+    @extend .box;
+    border-radius: 10px;
+}
+
+.dokan-coupon-content,
+.dokan-reports-content,
+.dokan-reviews-content {
+    padding: 20px !important
+}
+
+.dokan-reviews-content {
+    .dokan-rating {
+        margin: 15px;
+    }
+}
+
+.dokan-close.dokan-remove-gravatar-image {
+    @extend .alert-danger;
+    @extend .alert-shadow-danger;
+    width: 25px !important;
+    height: 25px !important;
+    display: block !important;
+    font-size: 1.25rem !important;
+}
+
+.rtl {
+    .dokan-right-margin-30 {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+
+    .dokan-form-group {
+        label {
+            text-align: right;
+        }
+    }
+
+    .store-open-close label.time {
+        padding-left: 0;
+        padding-right: 5px;
+    }
+}
+
+.dokan-product-search-form {
+    .dokan-form-group {
+        float: left !important;
+    }
+}
+
+#product-filter {
+    .dokan-form-group {
+        #bulk-product-action {
+            padding: 8px 25px !important;
+        }
+    }
+}
+
+/*------------------------------------*\
+            Lables
+\*------------------------------------*/
+.dokan-label.dokan-label-success {
+    @extend .btn-success;
+}
+
+.dokan-label.dokan-label-danger {
+    @extend .btn-danger;
+}
+
+.dokan-label.dokan-label-warning {
+    @extend .btn-warning;
+}
+
+
+// Arrow icon on Store page
+.dokan-widget-area {
+    .caret-icon {
+        .fa-angle-right {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+/*------------------------------------*\
+            Alerts
+\*------------------------------------*/
+.dokan-alert.dokan-alert-warning {
+    @extend .alert-warning;
+}
+
+.dokan-alert.dokan-alert-success {
+    @extend .alert-success;
+}
+
+
+/*------------------------------------*\
+            Buttons
+\*------------------------------------*/
+.dokan-btn.dokan-btn-theme {
+    @extend .btn-success;
+    border: none !important;
+}
+
+.dokan-btn.dokan-btn-danger {
+    @extend .btn-danger;
+    border: none !important;
+    border-radius: 5px !important;
+}
+
+
+// Report button in single product page
+.dokan-report-abuse-button {
+    @extend .btn-danger;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px !important;
+}

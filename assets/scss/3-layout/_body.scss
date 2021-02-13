@@ -1,0 +1,11 @@
+#main {
+    margin-top: 32px;
+
+    >section {
+        margin-bottom: 85px;
+
+        &:last-child {
+            margin-bottom: 0
+        }
+    }
+}

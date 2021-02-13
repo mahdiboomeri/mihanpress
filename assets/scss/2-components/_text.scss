@@ -1,0 +1,25 @@
+$texts : (
+    "primary" : $color_secondary, 
+    "success" : #00c178, 
+    "info" : #396afc, 
+    "danger" : #f00000
+);
+
+@each $name,
+$color in $texts {
+    .text-#{$name} {
+        color: $color;
+    }
+}
+
+.price {
+    ins {
+        .woocommerce-Price-amount {
+            @extend .text-success;
+        }
+    }
+
+    >.woocommerce-Price-amount {
+        @extend .text-success;
+    }
+}

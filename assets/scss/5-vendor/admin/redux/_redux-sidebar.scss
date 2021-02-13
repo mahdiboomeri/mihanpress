@@ -1,0 +1,65 @@
+.redux-sidebar {
+    .redux-group-menu {
+        background-color: #F6F5FA;
+
+        .redux-group-tab-link-li {
+            a {
+                background: #F6F5FA;
+                color: #B0BECA !important;
+                border-color: transparent;
+
+                &:hover,
+                &:visited,
+                &:focus,
+                &:active {
+                    background-color: transparent !important;
+                    color: #B0BECA !important;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &.activeChild.hasSubSections,
+            &.active {
+                a {
+                    background-color: transparent !important;
+                    color: #808A93 !important;
+                    font-weight: 400 !important;
+                    text-shadow: none;
+
+                    &:hover,
+                    &:visited,
+                    &:focus,
+                    &:active {
+                        background-color: transparent !important;
+                        color: #808A93 !important;
+                    }
+                }
+
+                .subsection {
+                    li {
+                        a {
+                            background-color: #15191C !important;
+                            color: #fff !important;
+                        }
+
+                        &.active {
+                            a {
+                                background: #2543D8 !important;
+
+                                &:hover,
+                                &:visited,
+                                &:focus,
+                                &:active {
+                                    background: #2543D8 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

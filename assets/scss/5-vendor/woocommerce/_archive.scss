@@ -1,0 +1,53 @@
+@import "../../1-base/helpers";
+
+.woocommerce-pagination {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 32px;
+    margin-right: 9px;
+    margin-left: 9px;
+
+    ul {
+        border: 0 !important;
+
+        li {
+            border: 0 !important;
+            margin: 5px !important;
+        }
+    }
+}
+
+.price_slider_amount {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .button {
+        border-radius: 5px !important;
+        box-shadow: none !important;
+        margin-top: 10px;
+    }
+}
+
+.price_slider {
+    background: #dbdbdb !important;
+}
+
+
+.add_to_cart_button {
+    padding: 7px 15px !important;
+    border-radius: 5px !important;
+    margin-right: 8px !important;
+    overflow: hidden;
+    position: relative;
+    line-height: 2;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+
+.flaticon-heart-1 {
+    color: #c03a2b;
+}

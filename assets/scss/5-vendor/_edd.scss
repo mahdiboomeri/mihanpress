@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    Checkout page
+\*------------------------------------*/
+#edd_checkout_wrap {
+    #edd_checkout_cart_form {
+        table {
+            thead {
+                height: 50px !important;
+
+                th {
+                    text-align: right;
+                    padding: 5px 10px !important;
+                }
+            }
+
+            td {
+                text-align: right;
+            }
+
+
+            .edd_cart_item_name {
+                .edd_cart_item_image {
+                    float: right;
+
+                    img {
+                        @include box-shadow-sm;
+                        width: 55px;
+                    }
+                }
+
+                .edd_checkout_cart_item_title {
+                    float: left;
+                }
+            }
+
+            .edd_cart_actions {
+                .edd_cart_remove_item_btn {
+                    font-size: .8rem;
+                    padding: 4px 9px;
+                    border-radius: 5px;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------*\
+    EDD success page
+\*------------------------------------*/
+#edd_purchase_receipt,
+#edd_purchase_receipt_products {
+    margin-bottom: 35px;
+
+    thead {
+        background: #eee;
+    }
+
+    th {
+        text-align: right !important;
+    }
+
+    td {
+        text-align: right !important;
+    }
+}

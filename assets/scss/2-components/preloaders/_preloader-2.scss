@@ -1,0 +1,50 @@
+.loader-2 .loader-circle-bg {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #fff;
+    border-top: 3px solid $loader_color;
+    border-left: 3px solid $loader_color;
+    border-radius: 50%;
+    animation: spinbig2 1.5s linear infinite;
+}
+
+.loader-2 .loader-circle-sm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-top: 3px solid $loader_color;
+    border-radius: 50%;
+    animation: spinsmall2 1.5s linear infinite;
+}
+
+@keyframes spinbig2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(250deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinsmall2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(-250deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}

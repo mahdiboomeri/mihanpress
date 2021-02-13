@@ -1,0 +1,93 @@
+body {
+    direction: ltr;
+    text-align: left;
+}
+
+.tick-list li, .tick-list li.close-sign, .woocommerce-product-details__short-description li {
+    background-position: left;
+    padding-right: 0;
+    padding-left: 35px;
+}
+
+.mihanpress-dashboard-content .dashboard_info span[class*="flaticon-"] {
+    left: auto;
+    right: 35px;
+}
+
+.shopping-cart__content {
+    right: 0;
+    left: auto;
+}
+
+.card .card__meta span[class*="flaticon-"] {
+    margin-left: 0 !important;
+    margin-right: .5rem;
+}
+
+.card .card__author-meta span.mr-2 {
+    margin-left: .25rem;
+}
+
+/* Breadcrumb */
+
+.mp-breadcrumbs li::before {
+    transform: skewX(-30deg);
+}
+
+.mp-breadcrumbs li::after {
+    transform: skewX(30deg);
+}
+
+.mp-breadcrumbs ul li:first-child::after, .mp-breadcrumbs ul li:first-child::before {
+    display: block;
+}
+
+.mp-breadcrumbs ul li:last-child::after, .mp-breadcrumbs ul li:last-child::before {
+    display: none;
+}
+
+/* Menu */
+
+.navbar>ul>li:not(.mihanpress-megamenu) .sub-menu {
+    left: 0;
+    right: auto;
+}
+
+.navbar>ul>li>.sub-menu::before {
+    left: 30px;
+    right: auto;
+    background: linear-gradient(135deg, #534a92 50%, transparent 50%);
+}
+
+/* Dashboard panel */
+
+@media (min-width: 768px) {
+    .ltr-pl-md-0 {
+        padding-left: 0 !important;
+    }
+    .ltr-pr-md-3 {
+        padding-right: 1rem !important;
+    }
+}
+
+/* Carousel */
+
+.flickity-page-dots {
+    flex-direction: row !important;
+}
+
+.flickity-button.next::before {
+    margin-right: 15px;
+    margin-left: -15px;
+}
+
+.flickity-button.previous::before {
+    margin-right: 11px;
+    margin-left: -18px;
+}
+
+/* Countdown elementor widget */
+
+.mihanpress-countdown {
+    flex-direction: row !important;
+}

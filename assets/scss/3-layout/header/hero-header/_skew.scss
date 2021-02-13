@@ -1,0 +1,69 @@
+.skew-bg {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+
+    >.skew-bg--gradient-primary {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform: skewY(-2deg);
+        background: #4d79ff;
+        background: linear-gradient(35deg, #75baf9, #75c8f9 50%, #4d79ff);
+        transform-origin: 0;
+    }
+
+    >.skew-bg--gradient-secondary {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform: skewY(4.1deg);
+        transform-origin: top right;
+        background: #875eef;
+        background: linear-gradient(to right, rgba(199, 41, 235, 0), #875eef);
+        opacity: .5;
+    }
+
+    >.skew-bg--shadow-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: 100px;
+        transform: skewY(-15deg);
+        transform-origin: 0;
+        background: #4d79ff;
+        background: linear-gradient(to left, rgba(77, 121, 255, 0), #4d79ff);
+        opacity: .16;
+    }
+
+    >.skew-bg--shadow-left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 220px;
+        transform: skew(3deg);
+        transform-origin: top right;
+        background: #875eef;
+        background: linear-gradient(to right, rgba(77, 121, 255, 0), #875eef);
+        opacity: .4;
+
+    }
+
+    >.skew-bg--gradient-primary>.skew-bg--shadow-main {
+        position: absolute;
+        width: 75%;
+        height: 75px;
+        left: 0;
+        bottom: 30px;
+        transform: skewY(17.5deg);
+        transform-origin: top right;
+        background: #b33fff;
+        background: linear-gradient(to bottom, #b33fff, rgba(117, 219, 249, 0));
+        opacity: .05;
+    }
+}
