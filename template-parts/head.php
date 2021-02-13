@@ -15,6 +15,8 @@ if ( is_404() ) {
 } elseif ( '1' === $mihanpress_options['sticky_sidebar'] ) {
 	$body_class = 'sticky-sidebar-on';
 }
+
+$theme_font = $mihanpress_options['theme_fonts'];
 ?>
 
 <!DOCTYPE html>
@@ -45,6 +47,11 @@ language_attributes();
 			<?php echo $mihanpress_options['site_custom_js']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</script>
 	<?php endif; ?>
+
+
+	<link rel="preload" href="<?php echo esc_url( get_template_directory_uri() . "/assets/webfonts/$theme_font/$theme_font.woff2" ); ?>" as="font" crossorigin="anonymous">
+	<link rel="preload" href="<?php echo esc_url( get_template_directory_uri() . '/assets/webfonts/flaticon/flaticon.woff2' ); ?>" as="font" crossorigin="anonymous">
+
 </head>
 
 <body <?php body_class( $body_class ); ?>>

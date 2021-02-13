@@ -1,9 +1,9 @@
-var path = require('path');
+const path = require('path');
 
 module.exports = {
-  entry: './assets/js/index.js',
+  entry: './assets/js/index.ts',
   entry: {
-    main: './assets/js/index.js',
+    main: './assets/js/index.ts',
     'sticky-sidebar': './assets/js/libraries/sticky-sidebar/sticky-sidebar.js'
   },
   output: {
@@ -13,15 +13,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      }
-    ]
-  }
+        test: /\.ts?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.ts', '.js'],
+  },
 };

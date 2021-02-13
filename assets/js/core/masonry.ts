@@ -1,22 +1,24 @@
-import WooAddedToCart from './added-to-cart.js';
+declare const Macy;
+
+import wooAddedToCart from './added-to-cart';
 
 document.addEventListener('DOMContentLoaded', masonry);
 
 function masonry() {
-    'use strict';
-
     /**
      * Masonry Grid on Archive Pages Using Macy.js library
      */
-    let grid_items = document.getElementsByClassName('masonry-grid');
+    const gridItems = document.getElementsByClassName('masonry-grid') as HTMLCollection;
 
-    if (grid_items.length > 0) {
-        for (let i = 0; i < grid_items.length; i++) {
-            let item = grid_items[i];
-            let columns = {
-                desktop: parseInt(item.dataset.column),
-                tablet: parseInt(item.dataset.columnTablet),
-                mobile: parseInt(item.dataset.columnMobile)
+    if (gridItems.length > 0) {
+
+        for (let i = 0; i < gridItems.length; i++) {
+
+            const item = gridItems[i];
+            const columns = {
+                desktop: item.getAttribute('data-column'),
+                tablet: item.getAttribute('data-column-tablet'),
+                mobile: item.getAttribute('data-column-mobile')
             };
 
             item.classList.add('masonry-grid-' + i);
@@ -41,7 +43,7 @@ function masonry() {
                 }, 1000);
             }
 
-            WooAddedToCart(() => {
+            wooAddedToCart(() => {
                 masonry.recalculate(true);
             });
 

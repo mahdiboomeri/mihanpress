@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', modals);
 
 function modals() {
-    'use strict';
-    
     /**
      * Init Modals
      */
-    let modals = document.querySelectorAll('.modal');
+    const modals = document.querySelectorAll('.modal');
     let options = {};
     
     if (modals.length > 0) {

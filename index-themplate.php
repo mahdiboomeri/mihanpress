@@ -1,5 +1,5 @@
 <?php
-/* Template Name: صفحه اصلی */
+/* Template Name: Homepage */
 
 get_header();
 ?>

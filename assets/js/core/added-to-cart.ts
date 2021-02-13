@@ -1,12 +1,17 @@
+declare const M;
+
+declare const mihanpressObj;
+
+
 document.addEventListener('DOMContentLoaded', () => {
-    WooAddedToCart(() => {
+    wooAddedToCart(() => {
         M.toast({
-            html: mihanpress_js_translate.added_to_cart
+            html: mihanpressObj.addedToCart
         });
     });
 });
 
-export default function WooAddedToCart(event) {
+export default function wooAddedToCart(event: () => void) {
     'use strict';
 
     /**
@@ -14,17 +19,19 @@ export default function WooAddedToCart(event) {
      * You can use the following jquery code to avoid further compatibility issues
      * jQuery(document.body).on("added_to_cart", function () {});
      */
-    let buttons = document.querySelectorAll('.ajax_add_to_cart');
+    const buttons = document.querySelectorAll('.ajax_add_to_cart');
 
     buttons.forEach(item => {
         item.addEventListener('click', () => {
             const refreshIntervalId = setInterval(() => {
+
                 if (!item.classList.contains('loading')) {
 
                     event();
 
                     clearInterval(refreshIntervalId);
                 }
+
             }, 100);
         });
     });

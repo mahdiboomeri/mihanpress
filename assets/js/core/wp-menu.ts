@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', WPMenu);
 
 function WPMenu() {
-    'use strict';
-
     /**
      * Disable Menu Link
      */
-    let links = document.querySelectorAll('.menu-item.no-link > a');
+    const links = document.querySelectorAll('.menu-item.no-link > a');
+
     links.forEach((link) => {
         link.removeAttribute('href');
     });
@@ -14,7 +13,7 @@ function WPMenu() {
     /**
      * Calculate Megamenu Position
      */
-    let megamenus = document.querySelectorAll('.mihanpress-megamenu > .sub-menu');
+    const megamenus = document.querySelectorAll('.mihanpress-megamenu > .sub-menu') as NodeListOf<HTMLElement>;
 
     if (megamenus.length > 0) {
         megamenus.forEach((megamenu) => {

@@ -13,8 +13,8 @@
  * the readme will list any important changes.
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
- * @package WooCommerce/Templates
- * @version 3.7.0
+ * @package WooCommerce\Templates
+ * @version 5.2.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -55,13 +55,13 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 
 						<?php if ( empty( $product_permalink ) ) : ?>
 							<?php
-							echo $product_name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+							echo wp_kses_post( $product_name );
 							?>
 						<?php else : ?>
 							<div class="mini_cart_product_name">
 								<a href="<?php echo esc_url( $product_permalink ); ?>">
 									<?php
-									echo $product_name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+									echo wp_kses_post( $product_name );
 									?>
 								</a>
 								<?php

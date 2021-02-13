@@ -1,8 +1,8 @@
+declare const StickySidebar;
+
 document.addEventListener('DOMContentLoaded', fixedSidebar);
 
 function fixedSidebar() {
-    'use strict';
-    
     /**
      * Sticky Sidebar using Slicky-sidebar.js
      */
